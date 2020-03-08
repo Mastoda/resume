@@ -10,7 +10,7 @@ jobs:
         uses: xu-cheng/latex-action@master
         with:
           root_file: main.tex
-      - run: rubber --pdf main.tex
+      - run: pdflatex main.tex
       - uses: actions/upload-artifact@master
         with:
           name: main.pdf
