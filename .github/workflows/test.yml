@@ -7,6 +7,6 @@ jobs:
       - name: Set up Git repository
         uses: actions/checkout@v1
       - name: Compile resume document
-        uses: dante-ev/latex-action@master
+        uses: Mastoda/resume@master
         with:
           root_file: main.tex
