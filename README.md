@@ -3,5 +3,3 @@
 # resume
 
 My professional resume
-
-Go action and download the latest artifact!
