@@ -1,4 +1,4 @@
-name: Build resume document
+name: build
 on: [push]
 jobs:
   build_latex:
@@ -7,6 +7,10 @@ jobs:
       - name: Set up Git repository
         uses: actions/checkout@v1
       - name: Compile resume document
-        uses: Mastoda/resume@master
+        uses: xu-cheng/latex-action@master
         with:
           root_file: main.tex
+      - uses: actions/upload-artifact@master
+        with:
+          name: main.pdf
+          path: main.pdf
